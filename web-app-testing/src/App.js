@@ -8,14 +8,13 @@ function App() {
   const [balls, setBalls] = useState(0)
 
  const handleStrike = ()=>{
-  
   if(strike < 2){setStrike(strike + 1)}
-  else{setStrike(0)}
+  else{handleHit()}
  }
 
 const handleBalls = ()=>{
  if(balls < 3){setBalls(balls + 1)}
- else{setBalls(0)}
+ else{handleHit()}
 }
 const handleFoul = ()=>{
   if(strike < 2){setStrike(strike + 1)}

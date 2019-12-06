@@ -13,7 +13,8 @@ return (
         <button onClick={props.handleBalls}>Ball</button>
         <br/>
         <button onClick = {props.handleFoul}>Foul</button>
-        <button onClick = {props.handleHit}>Hit/Out</button>
+        <button onClick={props.handleHit}>Batter hit ball</button>
+        <button onClick = {props.handleHit}>Batter hit with ball</button>
 
     </div>
 )
